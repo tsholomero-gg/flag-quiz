@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flag QUIZ - Guess the Country</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header class="site-header">
+        <h1>Flag QUIZ</h1>
+        <p class="subtitle">Guess the country from the flag</p>
+    </header>
+
+    <main class="quiz" id="quiz">
+        <div id="scorebaord" class="scoreboard">
+            Score: <span id="score">0<span> / <span id="total">10</span>
+            &nbsp;•&nbsp; Q: <span id="asked">0</span>
+        </div>
+
+        <div id="question-number"></div>
+
+        <div class="card">
+            <img id="flag" src="" alt="Country flag" />
+            <div id="options" class="options" role="list"></div>
+        </div>
+
+        <div class="controls">
+            <button id="next" class="btn" disabled type="button">Next</button>
+            <button id="restart" class="btn" hideen type="button">Play Again</button>
+        </div>
+
+        <div id="message" class="message" aria-live="polite"></div>
+    </main>
+
+    <footer class="footer">Built with ❤️ • Data from REST Countries (restcountries.com)</footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

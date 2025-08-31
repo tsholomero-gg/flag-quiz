@@ -112,6 +112,11 @@ button.option.wrong {
     background: #6bd19a;
 }
 
+#next:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
 .message {
     text-align: center;
     margin-top: 8px;
